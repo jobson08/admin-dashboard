@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React, { useEffect } from 'react';
 import { AiOutlineMenu } from 'react-icons/ai';
 import { FiShoppingCart } from 'react-icons/fi';
@@ -24,7 +25,7 @@ const NavButton = ({ title, customFunc, icon, color, dotColor }) =>(
 )
 
 const Navbar = () => {
-  const { activeMenu, setActiveMenu, isClicked, setIsClicked, handleClick,screenSize,setScreenSize } = useStateContext();
+  const {  setActiveMenu, isClicked, handleClick,screenSize,setScreenSize } = useStateContext();
 
 useEffect(() => {
   const handleRsize = () => setScreenSize
@@ -35,7 +36,7 @@ useEffect(() => {
   handleRsize();
 
   return () => window.removeEventListener ('resize', handleRsize);
-}, []);
+}, [setScreenSize]);
 
 useEffect(() =>{
   if(screenSize <= 900) {
@@ -43,7 +44,7 @@ useEffect(() =>{
   } else {
     setActiveMenu(true);
   }
-},[screenSize]);
+},[screenSize, setActiveMenu]);
 
   return (
     <div className='flex justify-between p-2 md:mx-6 relative'>

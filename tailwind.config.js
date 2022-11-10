@@ -40,7 +40,7 @@ module.exports = {
         },
         backgroundImage: {
           'hero-pattern':
-            "url('https://i.ibb.co/MkvLDfb/Rectangle-4389.png')",
+            "url('https://oneflow.com.br/wp-content/uploads/news/startup-managers-presenting-and-analyzing-sales-growth-chart-group-of-workers-with-heap-of-cash-rocket-bar-diagrams-with-arrow-and-heap-of-money.png')",
         },
       },
     },

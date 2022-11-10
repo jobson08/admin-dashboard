@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import {FiSettings} from 'react-icons/fi';
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
@@ -37,7 +37,6 @@ function App() {
         <div className='fixed md:static bg-main-bg dark:bg-main-dark-bg navbar w-full'>
         <Navbar />
          </div>
-        </div>
 
         <div>
         <Routes>
@@ -66,6 +65,7 @@ function App() {
                 <Route path="/pyramid" element={<Pyramid />} />
                 <Route path="/stacked" element={<Stacked />} />
               </Routes>
+        </div>
         </div>
       </div>
    </BrowserRouter>
