@@ -19,9 +19,9 @@ const Ecommerce = () => {
 const { currentColor, currentMode } = useStateContext();
 
   return (
-    <div className="mt-24">
-    <div className="flex flex-wrap lg:flex-nowrap justify-center ">
-      <div className="bg-white dark:text-gray-200 dark:bg-secondary-dark-bg h-44 rounded-xl w-full lg:w-80 p-8 pt-9 m-3 bg-hero-pattern bg-no-repeat bg-cover bg-center">
+    <div className="mt-20">
+    <div className="flex flex-wrap lg:flex-nowrap m-3 justify-center ">
+     <div className="bg-white dark:text-gray-200 dark:bg-secondary-dark-bg h-44 rounded-xl w-full lg:w-80 p-8 pt-9 m-3 bg-hero-pattern bg-no-repeat bg-cover bg-center">
         <div className="flex justify-between items-center">
           <div>
             <p className="font-bold text-gray-400">Earnings</p>
@@ -44,9 +44,9 @@ const { currentColor, currentMode } = useStateContext();
           />
         </div>
       </div>
-      <div className="flex m-3 flex-wrap justify-center gap-1 items-center">
+      <div className="flex flex-wrap justify-center gap-1 items-center">
         {earningData.map((item) => (
-          <div key={item.title} className="bg-white h-44 dark:text-gray-200 dark:bg-secondary-dark-bg md:w-56  p-4 pt-9 rounded-2xl ">
+          <div key={item.title} className="bg-white h-44 dark:text-gray-200 dark:bg-secondary-dark-bg md:w-50  p-4 pt-9 rounded-2xl ">
             <button
               type="button"
               style={{ color: item.iconColor, backgroundColor: item.iconBg }}
@@ -66,6 +66,7 @@ const { currentColor, currentMode } = useStateContext();
       </div>
     </div>
 
+            {/*Revenue Updates */}
     <div className="flex gap-10 flex-wrap justify-center">
       <div className="bg-white dark:text-gray-200 dark:bg-secondary-dark-bg m-3 p-4 rounded-2xl md:w-780  ">
         <div className="flex justify-between">
@@ -120,6 +121,8 @@ const { currentColor, currentMode } = useStateContext();
         </div>
       </div>
       <div>
+
+        {/*EARINGS */}
         <div
           className=" rounded-2xl md:w-400 p-4 m-3"
           style={{ backgroundColor: currentColor }}
